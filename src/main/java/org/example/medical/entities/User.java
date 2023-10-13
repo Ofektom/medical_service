@@ -15,9 +15,9 @@ public abstract class User {
     private String weight;
     private String genoType;
     private String nextOfKin;
-    //Association and Aggregation (is and has a relationship)
     private List<Allergies> allergies;
     private BloodGroup bloodGroup;
+    private String height;
 
     public String getName() {
         return name;
@@ -105,5 +105,12 @@ public abstract class User {
 
     public void setBloodGroup(BloodGroup bloodGroup) {
         this.bloodGroup = bloodGroup;
+    }
+
+    public String getHeight() {
+        return height;
+    }
+    public void setHeight(String height) {
+        this.height = height;
     }
 }

@@ -3,6 +3,8 @@ package org.example.medical.entities;
 import org.example.medical.enums.Role;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.Map;
 
 public class MedicalPersonnel extends User{
 
@@ -11,6 +13,8 @@ public class MedicalPersonnel extends User{
     private String grade;
     private BigDecimal salary;
     private Role role;
+    private LocalDate dateOfAppointment;
+    private Map<Long, String> accountDetails;
 
     public MedicalPersonnel() {
     }
@@ -62,5 +66,20 @@ public class MedicalPersonnel extends User{
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public LocalDate getDateOfAppointment() {
+        return dateOfAppointment;
+    }
+    public void setDateOfAppointment(LocalDate dateOfAppointment) {
+        this.dateOfAppointment = dateOfAppointment;
+    }
+
+    public Map<Long, String> getAccountDetails() {
+        return accountDetails;
+    }
+
+    public void setAccountDetails(Map<Long, String> accountDetails) {
+        this.accountDetails = accountDetails;
     }
 }
